@@ -1,0 +1,33 @@
+
+#chessboard .tile {
+    height: calc(var(--board-height)/8);
+    width: calc(var(--board-width)/8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#chessboard .tile.green {
+    background-color: rgb(58, 115, 65);  
+}
+
+#chessboard .tile.white {
+    background-color: white;
+}   
+
+
+#chessboard .tile .chess-piece {
+    height: calc(var(--board-height)/10);
+    width: calc(var(--board-width)/10);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tile .chess-piece:hover{
+    cursor: grab;
+}
+
+.tile .chess-piece:active{
+    cursor: grab;
+}
